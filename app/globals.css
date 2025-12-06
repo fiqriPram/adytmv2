@@ -1,10 +1,20 @@
 @import "tailwindcss";
 
+/*
+  Kita mengatur warna tema gelap secara langsung di sini.
+  Ini akan menjadi warna default untuk seluruh website.
+*/
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  /* Clean white background */
+  --foreground: #000000;
+  /* Black text for contrast */
 }
 
+/*
+  Di sini kita mendaftarkan variabel CSS ke dalam sistem tema Tailwind v4.
+  Dengan ini, kita bisa menggunakan kelas seperti `bg-background` dan `text-foreground`.
+*/
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -12,15 +22,17 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/*
+  Terapkan warna tema ke seluruh halaman.
+  Menggunakan `theme()` adalah cara yang direkomendasikan di v4.
+*/
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Aktifkan smooth scrolling untuk navigasi */
+html {
+  scroll-behavior: smooth;
 }
