@@ -4,6 +4,8 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
+
+
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const pathname = usePathname();
@@ -62,8 +64,8 @@ const Navbar = () => {
                                         href={item.href}
                                         onClick={handleMenuClick}
                                         className={`px-5 py-2.5 rounded-full text-center text-sm font-medium transition-all duration-300 ${pathname === item.href
-                                                ? 'bg-gray-800 text-white shadow-lg'
-                                                : 'text-gray-700 hover:bg-gray-100'
+                                            ? 'bg-gray-800 text-white shadow-lg'
+                                            : 'text-gray-700 hover:bg-gray-100'
                                             }`}
                                     >
                                         {item.label}
