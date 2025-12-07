@@ -1,22 +1,22 @@
 // components/About.tsx
 import Image from 'next/image';
 import Link from 'next/link';
-import { FaLinkedin, FaGithub, FaMedium, FaYoutube, FaDev } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaDribbble, FaBehance, FaMedium, FaYoutube, FaDev } from 'react-icons/fa';
 
 const About = () => {
     return (
         <section className="min-h-screen flex flex-col items-center justify-center bg-white text-black pt-24 pb-6 overflow-hidden">
-            <div className="container mx-auto px-6 max-w-5xl flex-grow flex flex-col justify-center">
+            <div className="container mx-auto px-6 max-w-4xl flex-grow flex flex-col justify-center">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center flex-grow">
 
                     {/* Left: Text Content */}
-                    <div className="space-y-8 order-2 md:order-1 max-w-lg mb-12 md:mb-0">
-                        <h1 className="text-5xl md:text-6xl font-black tracking-tight leading-none text-black">
+                    <div className="space-y-6 order-2 md:order-1 max-w-md mb-8 md:mb-0">
+                        <h1 className="text-4xl md:text-5xl font-black tracking-tight leading-none text-black">
                             Nice to <br />
                             meet you!
                         </h1>
 
-                        <div className="space-y-6 text-base md:text-lg text-gray-600 leading-relaxed font-medium">
+                        <div className="space-y-4 text-sm md:text-base text-gray-600 leading-relaxed font-medium">
                             <p>
                                 My name is <Link href="https://www.linkedin.com/in/fiqripramudya/" target="_blank" className="bg-gray-100 px-2 py-1 rounded-md font-bold text-black border border-gray-200 hover:bg-gray-200 transition-colors cursor-pointer">Fiqri Pramudya Adiyatma</Link> , I am a web developer, interested in both frontend and backend web development.
                             </p>
@@ -32,10 +32,10 @@ const About = () => {
                     </div>
 
                     {/* Right: 3D Illustration */}
-                    <div className="relative h-[400px] md:h-[500px] w-full flex items-center justify-center order-1 md:order-2">
-                        <div className="relative w-full h-full max-w-md animate-float">
+                    <div className="relative h-[300px] md:h-[400px] w-full flex items-center justify-center order-1 md:order-2">
+                        <div className="relative w-full h-full max-w-sm animate-float">
                             <Image
-                                src="/mind_blown_3d.png"
+                                src="/stewie.jpg"
                                 alt="Creative Mind Explosion"
                                 fill
                                 className="object-contain drop-shadow-2xl"
