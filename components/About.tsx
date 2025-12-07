@@ -1,7 +1,7 @@
 // components/About.tsx
 import Image from 'next/image';
 import Link from 'next/link';
-import { FaLinkedin, FaGithub, FaDribbble, FaBehance, FaMedium, FaYoutube, FaDev } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaMedium, FaYoutube, FaDev } from 'react-icons/fa';
 
 const About = () => {
     return (
